@@ -29,7 +29,7 @@ def fetch_earthquake_data():
     lines = pre_tag.text.strip().split("\n")
     
     # Find the header index
-    header_index = next((i for i, line in enumerate(lines) if "Tarih" in line), None)
+    header_index = next((i for i, line in enumerate(lines) if "Date" in line), None)
     if header_index is None:
         print("Failed to find the header.")
         return None
