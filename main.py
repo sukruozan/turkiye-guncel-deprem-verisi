@@ -76,8 +76,6 @@ def fetch_earthquake_data():
         combined_df = pd.concat([existing_df, df]).drop_duplicates(subset=["Date", "Time", "Latitude", "Longitude"], keep="last")
 
         # Sort by date and time
-        combined_df["Date"] = pd.to_datetime(combined_df["Date"])
-        combined_df["Time"] = pd.to_datetime(combined_df["Time"], format="%H:%M:%S")
         combined_df = combined_df.sort_values(by=["Date", "Time"])
         
 
