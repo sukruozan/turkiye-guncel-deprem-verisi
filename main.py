@@ -75,6 +75,12 @@ def fetch_earthquake_data():
         # Merge new data, avoiding duplicates
         combined_df = pd.concat([existing_df, df]).drop_duplicates(subset=["Date", "Time", "Latitude", "Longitude"], keep="last")
 
+        # Sort by date and time
+        combined_df["Date"] = pd.to_datetime(combined_df["Date"])
+        combined_df["Time"] = pd.to_datetime(combined_df["Time"], format="%H:%M:%S")
+        combined_df = combined_df.sort_values(by=["Date", "Time"])
+        
+
         # Save updated data
         combined_df.to_csv(month_file, index=False)
         print(f"Updated {month_file} with new earthquake data.")
