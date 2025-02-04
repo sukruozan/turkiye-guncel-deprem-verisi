@@ -78,6 +78,7 @@ def fetch_earthquake_data():
         # Save updated data
         combined_df.to_csv(month_file, index=False)
         print(f"Updated {month_file} with new earthquake data.")
+        print(combined_df.tail(20))
         print(combined_df.head(20))
 
 if __name__ == "__main__":
