@@ -25,9 +25,7 @@ Deprem verileri **yıl ve ay bazında** saklanır. Klasör ve dosya organizasyon
 - **Yeni veriler eklenirken, aynı tarih-saat-koordinatlı ölçümler güncellenir**, böylece yinelenen kayıtlar engellenir.
 - **Farklı aylara ait veriler doğru dosyaya eklenir.** Örneğin, Şubat ayında çalıştırıldığında ancak Ocak ayına ait depremler varsa, Ocak ayının (`01.csv`) içine eklenir.
 
-
-
-# 🇬🇧 Türkiye Real-Time Earthquake Data
+# Türkiye Real-Time Earthquake Data
 
 This Python script scrapes the latest earthquake data from Boğaziçi University Kandilli Observatory and Earthquake Research Institute and processes it into a structured format. 🚀
 
