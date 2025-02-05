@@ -69,8 +69,10 @@ def fetch_earthquake_data():
         # Load existing data if file exists
         if os.path.exists(month_file):
             existing_df = pd.read_csv(month_file, dtype=str)
+            print(f"Loaded {month_file} with {len(existing_df)} existing earthquake data.")
         else:
             existing_df = pd.DataFrame(columns=["Date", "Time", "Latitude", "Longitude", "Depth", "MD", "ML", "Mw", "Location"])
+            print(f"Created new {month_file} file.")
 
         # Merge new data, avoiding duplicates
         combined_df = pd.concat([existing_df, df]).drop_duplicates(subset=["Date", "Time", "Latitude", "Longitude"], keep="last")
@@ -79,8 +81,9 @@ def fetch_earthquake_data():
         combined_df = combined_df.sort_values(by=["Date", "Time"])
         
 
-        # Save updated data
+        # Save updated data ensure overwriting
         combined_df.to_csv(month_file, index=False)
+        
         print(f"Updated {month_file} with new earthquake data.")
         print(combined_df.tail(20))
         print(combined_df.head(20))
