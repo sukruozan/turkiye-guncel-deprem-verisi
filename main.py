@@ -80,7 +80,8 @@ def fetch_earthquake_data():
 
         # Sort by date and time
         combined_df = combined_df.sort_values(by=["Date", "Time"])
-        
+        #print size of the data
+        print(f"Size of the data: {combined_df.shape}")
 
         # Save updated data ensure overwriting
 
