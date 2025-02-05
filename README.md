@@ -13,10 +13,11 @@ Deprem verileri **yıl ve ay bazında** saklanır. Klasör ve dosya organizasyon
    ├── 📄 01.csv  (Ocak 2025 verileri)\
    ├── 📄 02.csv  (Şubat 2025 verileri)\
    ├── 📄 03.csv  (Mart 2025 verileri)\
-   └── ...\
-📂 2026
-   ├── 📄 01.csv  (Ocak 2026 verileri)
-   ├── 📄 02.csv  (Şubat 2026 verileri)
+   └── ...
+
+📂 2026\
+   ├── 📄 01.csv  (Ocak 2026 verileri)\
+   ├── 📄 02.csv  (Şubat 2026 verileri)\
    └── ...
 
 
@@ -37,12 +38,12 @@ Earthquake data is stored **yearly and monthly**. The folder and file organizati
    ├── 📄 01.csv  (January 2025 data)\
    ├── 📄 02.csv  (February 2025 data)\
    ├── 📄 03.csv  (March 2025 data)\
-   └── ...\
+   └── ...
 
 📂 2026\
    ├── 📄 01.csv  (January 2026 data)\
    ├── 📄 02.csv  (February 2026 data)\
-   └── ...\
+   └── ...
 
 - **A separate folder is created for each year** (e.g., `2025`, `2026`).
 - **A CSV file is created for each month** (`01.csv`, `02.csv`, ...).
