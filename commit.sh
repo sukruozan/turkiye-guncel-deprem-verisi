@@ -14,7 +14,7 @@ COMMIT_MESSAGE="$1"
 cd /home/GitHub/deprem
 
 # Stage all changes (including deletions and new files)
-git add .
+git add --all
 
 # Commit the changes with the provided message
 git commit -m "$COMMIT_MESSAGE"
