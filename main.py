@@ -84,6 +84,7 @@ def fetch_earthquake_data():
         print(f"Size of the data: {combined_df.shape}")
 
         # Save updated data ensure overwriting
+        combined_df.to_csv(month_file, index=False)
 
         
         print(f"Updated {month_file} with new earthquake data.")
