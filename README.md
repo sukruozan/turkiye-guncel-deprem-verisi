@@ -9,7 +9,7 @@ Bu Python betiği, Boğaziçi Üniversitesi Kandilli Rasathanesi ve Deprem Araş
 Deprem verileri **yıl ve ay bazında** saklanır. Klasör ve dosya organizasyonu aşağıdaki gibidir:
 
 
-📂 2025
+📂 2025\
    ├── 📄 01.csv  (Ocak 2025 verileri)
    ├── 📄 02.csv  (Şubat 2025 verileri)
    ├── 📄 03.csv  (Mart 2025 verileri)
