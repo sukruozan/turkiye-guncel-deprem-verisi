@@ -49,6 +49,7 @@ def fetch_earthquake_data():
             date_obj = datetime.datetime.strptime(date, "%Y.%m.%d")
             year_folder = str(date_obj.year)
             month_file = os.path.join("/home/GitHub/deprem",year_folder, f"{date_obj.strftime('%m')}.csv")
+            print(month_file)
 
             earthquakes.append([date, time, latitude, longitude, depth, md, ml, mw, location, year_folder, month_file])
 
@@ -85,8 +86,8 @@ def fetch_earthquake_data():
 
         
         print(f"Updated {month_file} with new earthquake data.")
-        print(combined_df.tail(20))
-        print(combined_df.head(20))
+        print(combined_df.tail(5))
+        print(combined_df.head(5))
 
 if __name__ == "__main__":
     fetch_earthquake_data()
