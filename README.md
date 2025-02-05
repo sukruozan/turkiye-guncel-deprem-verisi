@@ -10,7 +10,7 @@ Deprem verileri **yıl ve ay bazında** saklanır. Klasör ve dosya organizasyon
 
 
 📂 2025\
-   ├── 📄 01.csv  (Ocak 2025 verileri)
+   ├── 📄 01.csv  (Ocak 2025 verileri)\
    ├── 📄 02.csv  (Şubat 2025 verileri)
    ├── 📄 03.csv  (Mart 2025 verileri)
    └── ...
