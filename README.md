@@ -33,15 +33,16 @@ This Python script scrapes the latest earthquake data from Boğaziçi University
 
 Earthquake data is stored **yearly and monthly**. The folder and file organization is as follows:
 
-📂 2025
-   ├── 📄 01.csv  (January 2025 data)
-   ├── 📄 02.csv  (February 2025 data)
-   ├── 📄 03.csv  (March 2025 data)
-   └── ...
-📂 2026
-   ├── 📄 01.csv  (January 2026 data)
-   ├── 📄 02.csv  (February 2026 data)
-   └── ...
+📂 2025\
+   ├── 📄 01.csv  (January 2025 data)\
+   ├── 📄 02.csv  (February 2025 data)\
+   ├── 📄 03.csv  (March 2025 data)\
+   └── ...\
+
+📂 2026\
+   ├── 📄 01.csv  (January 2026 data)\
+   ├── 📄 02.csv  (February 2026 data)\
+   └── ...\
 
 - **A separate folder is created for each year** (e.g., `2025`, `2026`).
 - **A CSV file is created for each month** (`01.csv`, `02.csv`, ...).
